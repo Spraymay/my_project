@@ -28,8 +28,6 @@
 
         if ( name == "" || name == " ")
           fail = "вы не ввели имя";
-        else if (email.split('@').length-1 == 0)
-          fail = "вы не верно ввели адрес эл. почты";
         else if (adr_pattern.test(email) == false)
           fail = "вы не верно ввели адрес эл. почты";
         else if ( password == "" || password == " ")
